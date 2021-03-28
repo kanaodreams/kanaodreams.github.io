@@ -8,34 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/mainstyle.css">
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-home.css" />
 
     <title>grafee.id</title>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/logo/grafee-3.png" alt="" height="45" />
+          <img src="img/logo/grafee-3.png" alt="" height="40" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rakitan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sparepart</a>
+              <a class="nav-link" href="#">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Gallery</a>
@@ -43,106 +43,536 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- akhir navbar -->
+
+    <!-- akhir our category -->
 
     <!-- jumbotron -->
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
+      <div class="container">
+        <h1>Selamat Datang di grafee.id</h1>
+        <p>Toko Komputer & Aksesoris Bekas Berkualitas</p>
+      </div>
     </div>
 
     <!-- akhir jumbotron -->
 
-    <!--  -->
-    <section id="about" class="about">
+    <!-- info panel -->
+    Photo by <a href="https://unsplash.com/@xps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">XPS</a> on <a href="/@xps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    <div class="row justify-content-center">
+      <div class="col-8 info-panel d-flex justify-content-around">
+        <div class="row row-cols-6 d-flex justify-content-center">
+          <div class="col-lg">
+            <!-- tombol menu kategori -->
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/category-more.svg" alt="" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Lainnya</a></li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <a href=""> <img src="img/icons/020-motherboard.png" alt="Motherboard" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Motherboard</a></li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <a href=""> <img src="img/icons/006-cpu.png" alt="Prosesor" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Prosesor</a></li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <a href=""> <img src="img/icons/008-chipset.png" alt="Vga" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Vga</a></li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <a href=""> <img src="img/icons/012-hard disk.png" alt="Harddisk" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Harddisk</a></li>
+            </ul>
+          </div>
+          <div class="col-lg">
+            <a href=""> <img src="img/icons/005-cable.png" alt="Power Supply" /></a>
+            <ul class="list-unstyled">
+              <li><a href="#">PSU</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-start mt-3">
+      <div class="col-8">
+        <!-- <button type="button" class="btn btn-outline-primary btn-sm tombol" data-bs-toggle="modal" data-bs-target="#exampleModal">Aksesoris Lainnya</button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-title" id="exampleModalLabel">
+                  <div class="row row-cols-3 d-flex justify-content-between">
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/020-motherboard.png" alt="Motherboard" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Motherboard</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/006-cpu.png" alt="Prosesor" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Prosesor</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/008-chipset.png" alt="Vga" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Vga</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/012-hard disk.png" alt="Harddisk" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Harddisk</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/005-cable.png" alt="Power Supply" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">PSU</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/026-ram.png" alt="ram" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Ram</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/030-ssd.png" alt="ssd" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">SSD</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/004-case.png" alt="rakitan" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">PC Rakitan</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/017-laptop.png" alt="laptop" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Laptop</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg">
+                      <a href=""> <img src="img/icons/023-drive.png" alt="usb" /></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Flashdisk</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir info panel -->
+
+    <!-- our store -->
+    <!-- <section>
       <div class="container">
-        <div class="row text-center mt-4 mb-3">
+        <div class="row mt-4 mb-4">
           <div class="col">
-            <h2>MENGAPA KAMI</h2>
+            <h4>Store</h4>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-3">
-            <div class="card mb-4">
-              <img src="img/thumbs/2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-9 d-flex justify-content-around">
+            <div class="col-md-3">
+              <div class="card card-marketplace mb-4">
+                <a href="#"> <img src="img/logo/tokopedia-logo.png" class="card-img-top mt-2 mb-2" alt="..." /></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card card-marketplace p-3 mb-4">
+                <a href="#"> <img src="img/logo/bukalapak-logo.png" class="card-img-top mt-2 mb-2" alt="..." /></a>
+              </div>
+            </div>
+            <div class="col-md3">
+              <div class="card card-marketplace mb-4">
+                <a href="#"> <img src="img/logo/shopee-logo.png" class="card-img-top mt-2 mb-2" alt="..." /></a>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="img/thumbs/2.jpg" class="card-img-top" alt="..." />
+        </div>
+      </div>
+    </section> -->
+    <!-- akhir our store -->
+
+    <!-- slider -->
+    <section id="slider">
+      <div class="container">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="img/slider/slider/4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/slider/slider/5.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/slider/slider/6.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/slider/slider/7.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/slider/slider/8.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- akhir slider -->
+
+    <!-- category -->
+    <section>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col">
+            <h4>Category Product</h4>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/1.jpg" class="card-img-top" alt="..." /></a>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Prosesor</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="img/thumbs/2.jpg" class="card-img-top" alt="..." />
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/2.jpg" class="card-img-top" alt="..." /></a>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Motherboard</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/3.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Graphic Card / VGA</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/4.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Power Supply Unit</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/5.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Power Supply Unit</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-3">
+              <a href="#"> <img src="img/thumbs/6.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Memory / RAM</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-2">
+              <a href="#"> <img src="img/thumbs/7.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Harddisk</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-kategori m-2">
+              <a href="#"> <img src="img/thumbs/8.jpg" class="card-img-top" alt="..." /></a>
+              <div class="card-body">
+                <h5 class="card-title">Aksesoris Lain</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm tombol">Lihat Detail</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- akhir category -->
 
-    <footer class="bg-dark text-white">
+    <div class="container-fluid hero-image">
+      <div class="row">
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- brand -->
+    <section id="brand-vendor">
+      <div class="container mb-5">
+        <div class="row mt-4">
+          <div class="col">
+            <h4>Brand</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10 brand-panel">
+            <!-- muncul -->
+            <div class="row row-cols-2 d-flex justify-content-start">
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/002-intel.png" alt="" />
+              </div>
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/001-AMD.png" alt="" />
+              </div>
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/asus.png" alt="" />
+              </div>
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/gigabyte.png" alt="" />
+              </div>
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/asrock.png" alt="" />
+              </div>
+              <div class="col-lg">
+                <img src="img/logo/brand-logo/msi.png" alt="" />
+              </div>
+            </div>
+            <!-- hidden -->
+            <div class="collapse" id="collapseExample">
+              <div class="row row-cols-2 d-flex justify-content-start">
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/ecs.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/enlight.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/012-seasonic.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/016-super flower.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/011-xfx.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/cougar.png" alt="" />
+                </div>
+              </div>
+              <div class="row row-cols-2 d-flex justify-content-start">
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/corsair.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/gskill.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/009-geil.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/007-adata.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/015-avexir.png" alt="" />
+                </div>
+                <div class="col-lg">
+                  <img src="img/logo/brand-logo/sandisk.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <p class="text-center">
+              <a class="btn btn-outline-primary btn-sm tombol" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir brand -->
+
+    <!-- contact -->
+    <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col mt-4">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <h4>Hubungi Kami</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-3 mb-4 me-3">
+            <div class="card card-contact card-img-top">
+              <div class="card-body">
+                <a class="navbar-brand" href="#">
+                  <img class="mt-3 mb-2" src="img/logo/grafee-3.png" height="50" class="d-inline-block align-top" alt="" />
+                </a>
+                <h6 class="pt-3">Alamat</h6>
+                <p>
+                  Jl. H. Joko 5 No.73 <br />
+                  Lenteng Agung, Jagakarsa <br />
+                  Jakarta Selatan
+                </p>
+                <h6 class="pt-3">WhatsApp</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-white" href="#"> <img src="img/logo/wa.png" height="30" alt="" /> 081318637755 </a>
+                  </li>
+                </ul>
+                <h6 class="pt-3">Kunjungi Kami</h6>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/tokopedia-logo.png" height="40" class="d-inline-block align-top" alt="" />
+                </a>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/bukalapak-logo.png" width="35" height="35" class="d-inline-block align-top" alt="" />
+                </a>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/shopee-logo.png" height="40" class="d-inline-block align-top" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 card-contact me-3">
+            <form class="m-3">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="handphone" class="form-label">Handphone</label>
+                <input type="number" class="form-control" id="handphone" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light tombol">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row mt-4 mb-3">
+          <div class="col">
             <a class="navbar-brand" href="#">
-              <img src="img/logo/grafee-3.png" alt="" height="45" />
+              <img class="mt-3 mb-2" src="img/logo/grafee-3.png" height="40" class="d-inline-block align-top" alt="" />
             </a>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center">
-            <div class="col">
-              <h5>Alamat</h5>
-              <p>Jl. H. Joko 5 No.73 <br>
-              Lenteng Agung, Jagakarsa <br>
-            Jakarta Selatan</p>
-            </div>
-            <div class="col">
-              <h5>WhatsApp</h5>
-              <p> 081318637755</p>
-            </div>
-            <div class="col">
-              <h5>Menu Utama</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <h5>Kategori Produk</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Material Promosi</a></li>
-                <li><a href="#">Buku</a></li>
-                <li><a href="#">Sign & Display</a></li>
-                <li><a href="#">Sablon</a></li>
-                <li><a href="#">Lain-Lain</a></li>
-                <li><a href="#">Custom Produk</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <h5>Kunjungi Kami</h5>
-              <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.513803036839!2d106.8361266683923!3d-6.327399859869492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed14aa884e43%3A0x98a871843dc8a5a1!2sNad%20Hardware!5e0!3m2!1sen!2sid!4v1613900239038!5m2!1sen!2sid" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col">
+            <h5>Alamat</h5>
+            <p>
+              Jl. H. Joko 5 No.73 <br />
+              Lenteng Agung, Jagakarsa <br />
+              Jakarta Selatan
+            </p>
           </div>
-          <div class="row">
-            <div class="col text-center">
-              <p>©Copyright Grafee.id All Rights Reserved.</p>
-            </div>
+          <div class="col">
+            <h5>WhatsApp</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"> <img src="img/logo/wa.png" height="30" alt="" /> 081318637755 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Menu Utama</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Kategori Produk</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Prosesor</a></li>
+              <li><a href="#">Motherboard</a></li>
+              <li><a href="#">Graphic Card</a></li>
+              <li><a href="#">Memory</a></li>
+              <li><a href="#">Hardisk</a></li>
+              <li><a href="#">Aksesoris Lain</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Kunjungi Kami</h5>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/tokopedia-logo.png" height="40" class="d-inline-block align-top" alt="" />
+            </a>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/bukalapak-logo.png" width="35" height="35" class="d-inline-block align-top" alt="" />
+            </a>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/shopee-logo.png" height="40" class="d-inline-block align-top" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>©Copyright Grafee.id All Rights Reserved.</p>
           </div>
         </div>
       </div>
