@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact-style.css" />
+
+    <title>grafee.id</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo/grafee-3.png" alt="" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- slider -->
+    <section id="slider">
+      <div class="container mb-3">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="img/slider/slider/4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/slider/slider/5.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/slider/slider/6.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/slider/slider/7.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/slider/8.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir slider -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-9">
+            <h4>Hubungi Kami</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-3 mb-4 me-3">
+            <div class="card card-contact card-img-top">
+              <div class="card-body">
+                <a class="navbar-brand" href="#">
+                  <img class="mt-3 mb-2" src="img/logo/grafee-3.png" height="50" class="d-inline-block align-top" alt="" />
+                </a>
+                <h6 class="pt-3">Alamat</h6>
+                <p>
+                  Jl. H. Joko 5 No.73 <br />
+                  Lenteng Agung, Jagakarsa <br />
+                  Jakarta Selatan
+                </p>
+                <h6 class="pt-3">WhatsApp</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-white" href="#"> <img src="img/logo/wa.png" height="30" alt="" /> 081318637755 </a>
+                  </li>
+                </ul>
+                <h6 class="pt-3">Kunjungi Kami</h6>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/tokopedia-logo.png" height="40" class="d-inline-block align-top" alt="" />
+                </a>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/bukalapak-logo.png" width="35" height="35" class="d-inline-block align-top" alt="" />
+                </a>
+                <a href="#">
+                  <img class="mt-3 me-3" src="img/logo/shopee-logo.png" height="40" class="d-inline-block align-top" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 card-contact me-3">
+            <form class="m-3">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="handphone" class="form-label">Handphone</label>
+                <input type="number" class="form-control" id="handphone" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light tombol">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row mt-4 mb-3">
+          <div class="col">
+            <a class="navbar-brand" href="#">
+              <img class="mt-3 mb-2" src="img/logo/grafee-3.png" height="40" class="d-inline-block align-top" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col">
+            <h5>Alamat</h5>
+            <p>
+              Jl. H. Joko 5 No.73 <br />
+              Lenteng Agung, Jagakarsa <br />
+              Jakarta Selatan
+            </p>
+          </div>
+          <div class="col">
+            <h5>WhatsApp</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"> <img src="img/logo/wa.png" height="30" alt="" /> 081318637755 </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Menu Utama</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Kategori Produk</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Prosesor</a></li>
+              <li><a href="#">Motherboard</a></li>
+              <li><a href="#">Graphic Card</a></li>
+              <li><a href="#">Memory</a></li>
+              <li><a href="#">Hardisk</a></li>
+              <li><a href="#">Aksesoris Lain</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Kunjungi Kami</h5>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/tokopedia-logo.png" height="40" class="d-inline-block align-top" alt="" />
+            </a>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/bukalapak-logo.png" width="35" height="35" class="d-inline-block align-top" alt="" />
+            </a>
+            <a href="#">
+              <img class="mt-3 me-3" src="img/logo/shopee-logo.png" height="40" class="d-inline-block align-top" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p>©Copyright Grafee.id All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+input,
+textarea {
+  color: #fff !important;
+  background-color: rgb(52, 58, 58) !important;
+}
+
+.card-contact {
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 3px 3px 6px rgba(13, 110, 253, 0.75);
+}
+
+.card-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card-contact h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1, 2;
+}
+
+.hero-slider {
+  border-bottom: 0.1rem solid #0d6efd;
+}
